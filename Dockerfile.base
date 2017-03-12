@@ -1,6 +1,8 @@
 FROM scratch
 MAINTAINER ArchLinux Dockerimage Maintainers
 
+RUN ./download
+
 ADD arch-rootfs/ /
 ADD additional/ /
 
